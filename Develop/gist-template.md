@@ -1,4 +1,4 @@
-# Title (replace with your title)
+# Regex Tutorial
 
 Introductory paragraph (replace this with your text)
 
@@ -38,9 +38,14 @@ expression and can be used in any order or combination.
 
 |Flag|Description|
 |:----:|----|
-|i|Case insensitive: Match will be case-insensitive.|
+|d|Generate indices for substring matches.|
 |g|Global Search: Match all instances, not just the first.|
+|i|Case insensitive: Match will be case-insensitive.|
+|s|Allows . to match newline characters.|
 |m|Multiline: Anchor meta characters work on each line.|
+|y|Perform a "sticky" search that matches starting at the current position in the target string.|
+|u|Unicode: Treat a pattern as a sequence of unicode code points.|
+
 
 ### Grouping and Capturing
 
