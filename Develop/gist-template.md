@@ -67,7 +67,7 @@ Lookbehinds and lookaheads (also called lookarounds) are specific types of non-c
 |?<=|Positive Lookbehind: Asserts that that value given will immediately precede the current position in the string. |
 |?<!|Negative Lookbehind: Asserts that that value given will NOT immediately precede the current position in the string.|
 
-|Examples|
+|Examples|Description|
 |:----:|----|
 |(?=foo)|What immediately follows the current position in the string is foo.|
 |(?<=foo)|What immediately precedes the current position in the string is foo.|
