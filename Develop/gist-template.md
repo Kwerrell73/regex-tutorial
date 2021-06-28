@@ -23,6 +23,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+Anchors are characters within the regular expression that allow the user to match strings that begins or ends with certain characters (or both). 
 
 ### Quantifiers
 
@@ -31,6 +32,15 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ### Character Classes
 
 ### Flags
+The flags property returns a string consisting of the flags of the current regular expression object.
+Flags are also called modifiers because they modify the output of a regular
+expression and can be used in any order or combination.
+
+|Flag|Description|
+|:----:|----|
+|i|Case insensitive: Match will be case-insensitive.|
+|g|Global Search: Match all instances, not just the first.|
+|m|Multiline: Anchor meta characters work on each line.|
 
 ### Grouping and Capturing
 
@@ -43,6 +53,14 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ### Back-references
 
 ### Look-ahead and Look-behind
+Lookbehinds and lookaheads (also called lookarounds) are specific types of non-capturing groups (used to match a pattern but without including it in the matching list). Lookarounds are used when a pattern must be preceded or followed by another pattern. For example, imagine we want to get all numbers that are preceded by the $ character from the string $4.44 and $10.88. We will use the following regular expression (?<=\$)[0-9\.]* which means: get all the numbers which contain the . character and are preceded by the $ character. These are the lookarounds that are used in regular expressions:
+
+|Symbol|Description|
+|:----:|----|
+|?=|Positive Lookahead|
+|?!|Negative Lookahead|
+|?<=|Positive Lookbehind|
+|?<!|Negative Lookbehind|
 
 ## Author
 
